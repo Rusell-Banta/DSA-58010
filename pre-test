@@ -1,0 +1,84 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNlF/8ipeJr0yFf6jTObqOu",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Rusell-Banta/DSA-58010/blob/main/pre-test\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 130
+        },
+        "id": "p_Zwkn2lJaXV",
+        "outputId": "ba892143-cf8c-4579-eeab-d433613dda06"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-8-3126a7eb6f12>\"\u001b[0;36m, line \u001b[0;32m8\u001b[0m\n\u001b[0;31m    self.side1 = side 1\u001b[0m\n\u001b[0m                      ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ],
+      "source": [
+        "class Shape:\n",
+        "  def Area(self):\n",
+        "    pass\n",
+        "  def Perimeter(self):\n",
+        "    pass\n",
+        "class Rectangle:\n",
+        "  def __init__(self,side1,side2):\n",
+        "    self.side1 = side 1\n",
+        "    self.side2 = side 2\n",
+        "  def Area(self):\n",
+        "    print(self.side1*self.side2)\n",
+        "  def Perimeter(self):\n",
+        "    print(2*(self.side1+self.side2))\n",
+        "\n",
+        "class Square(Shape):\n",
+        "  def __init__(self,side):\n",
+        "    self.side = side\n",
+        "  def Area(self):\n",
+        "    print(self.side**2)\n",
+        "  def Perimeter(self):\n",
+        "    print(self.side*4)\n",
+        "square = Square(4)\n",
+        "square.Area()\n",
+        "\n",
+        "rect=Rectangle(7,3)\n",
+        "rect.Area()\n",
+        "\n",
+        "square.Perimeter()\n",
+        "rect.Perimeter()"
+      ]
+    }
+  ]
+}
